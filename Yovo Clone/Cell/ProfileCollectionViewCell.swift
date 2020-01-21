@@ -14,4 +14,5 @@ class ProfileCollectionViewCell: UICollectionViewCell {
     static let cellIdentifier = "ProfileCollectionViewCell"
     
     // MARK: - IBOutlets
+    @IBOutlet weak var postImage: UIImageView!
 }

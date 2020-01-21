@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2138FA3723D754470089DEE7 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138FA3623D754470089DEE7 /* ImageDownloader.swift */; };
 		7C3EC0C723D5A37A00922586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3EC0C623D5A37A00922586 /* AppDelegate.swift */; };
 		7C3EC0C923D5A37A00922586 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3EC0C823D5A37A00922586 /* SceneDelegate.swift */; };
 		7C3EC0CB23D5A37A00922586 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3EC0CA23D5A37A00922586 /* FeedViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2138FA3623D754470089DEE7 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		7C3EC0C323D5A37A00922586 /* Yovo Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yovo Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C3EC0C623D5A37A00922586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C3EC0C823D5A37A00922586 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				7C3EC10023D5AF4E00922586 /* Feed.swift */,
 				7C3EC10223D5B06800922586 /* FeedViewModel.swift */,
 				7C3EC10923D70C0100922586 /* ProfileViewModel.swift */,
+				2138FA3623D754470089DEE7 /* ImageDownloader.swift */,
 			);
 			path = "Yovo Clone";
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				7C3EC10A23D70C0100922586 /* ProfileViewModel.swift in Sources */,
 				7C3EC10C23D70DC000922586 /* ProfileCollectionViewCell.swift in Sources */,
 				7C3EC0C723D5A37A00922586 /* AppDelegate.swift in Sources */,
+				2138FA3723D754470089DEE7 /* ImageDownloader.swift in Sources */,
 				7C3EC0C923D5A37A00922586 /* SceneDelegate.swift in Sources */,
 				7C3EC0FC23D5A67E00922586 /* PlayerView.swift in Sources */,
 				7C3EC10823D70BDF00922586 /* ProfileViewController.swift in Sources */,

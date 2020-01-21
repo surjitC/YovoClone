@@ -152,21 +152,21 @@
                                 <rect key="frame" x="0.0" y="220.5" width="414" height="641.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lKm-nJ-WCK">
-                                    <size key="itemSize" width="257" height="226"/>
+                                    <size key="itemSize" width="134" height="156"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfileCollectionViewCell" id="1y0-4X-iSq" customClass="ProfileCollectionViewCell" customModule="Yovo_Clone" customModuleProvider="target">
-                                        <rect key="frame" x="78.5" y="0.0" width="257" height="226"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="134" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="E97-hj-QDB">
-                                            <rect key="frame" x="0.0" y="0.0" width="257" height="226"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="134" height="156"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="eZ3-Pr-IAY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="257" height="226"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="134" height="156"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -176,7 +176,10 @@
                                                 <constraint firstItem="eZ3-Pr-IAY" firstAttribute="top" secondItem="E97-hj-QDB" secondAttribute="top" id="zpa-yd-GZW"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="257" height="226"/>
+                                        <size key="customSize" width="134" height="156"/>
+                                        <connections>
+                                            <outlet property="postImage" destination="eZ3-Pr-IAY" id="AoU-Wm-QkX"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -208,7 +211,11 @@
                         <viewLayoutGuide key="safeArea" id="6Qy-J8-JxI"/>
                     </view>
                     <connections>
+                        <outlet property="details" destination="SvS-sf-GWb" id="u95-Ze-dnK"/>
                         <outlet property="profileCollectionView" destination="uWp-St-r9E" id="dAE-OQ-lp3"/>
+                        <outlet property="profileImage" destination="93f-ui-vhj" id="y7e-Kh-bUQ"/>
+                        <outlet property="titleText" destination="PqW-TO-PVN" id="7km-rT-1S5"/>
+                        <outlet property="userName" destination="USQ-oI-ZdT" id="jwr-p9-5SG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXf-R0-bpO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

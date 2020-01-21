@@ -15,6 +15,7 @@ class FeedViewController: UIViewController {
     
     //MARK: - Properties
     var feedViewModel = FeedViewModel()
+    let imageCache = NSCache<AnyObject, AnyObject>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,17 +37,9 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
         guard let feedCell = collectionView.dequeueReusableCell(withReuseIdentifier: FeedCollectionViewCell.cellIdentifier, for: indexPath) as? FeedCollectionViewCell else { return UICollectionViewCell() }
         let post = feedViewModel.posts[indexPath.row]
         feedCell.configureCell(for: post)
-//        if let imageUrl = post.userImageUrl {
-//            self.feedViewModel.downloadImage(from: imageUrl, at: indexPath) { (data, index) in
-//                if let data = data {
-//                    DispatchQueue.main.async {
-//                        guard let cell = collectionView.cellForItem(at: index) as? FeedCollectionViewCell else { return }
-//                        cell.setImage(imageData: data)
-//                        self.feedCollectionView.reloadData()
-//                    }
-//                }
-//            }
-//        }
+        if let imageUrl = post.userImageUrl {
+            getImagefor(imageUrl, indexPath)
+        }
         if indexPath.row == 0 {
             feedCell.playVideo()
         }
@@ -88,6 +81,26 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
         guard let cell = feedCollectionView.cellForItem(at: indexPath) as? FeedCollectionViewCell else { return }
         cell.playVideo()
        
+    }
+
+    func getImagefor(_ imageUrl: String, _ indexPath: IndexPath) {
+        if let imageFromCache = self.imageCache.object(forKey: imageUrl as AnyObject) as? UIImage {
+            self.putImage(at: indexPath, imageFromCache)
+        } else {
+            ImageDownloader.sharedInstance.downloadImageFrom(urlString: imageUrl, indexPath: indexPath) { [weak self] (image, index) in
+                DispatchQueue.main.async {
+                    self?.imageCache.setObject(image, forKey: imageUrl as AnyObject)
+                    self?.putImage(at: index, image)
+                    self?.feedCollectionView.reloadData()
+                }
+
+            }
+        }
+    }
+    func putImage(at indexPath: IndexPath, _ image: UIImage) {
+        if let updateCell = self.feedCollectionView.cellForItem(at: indexPath) as? FeedCollectionViewCell {
+            updateCell.profileImageButton.setImage(image, for: .normal)
+        }
     }
     
 }

@@ -3,22 +3,22 @@
     {
       "id": "1",
       "userName": "Naominagata",
-      "vUrl": "https://assignment_test.storage.googleapis.com/VID2.mp4",
-      "userImageUrl": "https://storage.cloud.google.com/assignment_test/img.jpg",
+      "vUrl": "https://assignment_test.storage.googleapis.com/VID1.mp4",
+      "userImageUrl": "https://assignment_test.storage.googleapis.com/img.jpg",
       "time": "16hr"
     },
     {
       "id": "2",
       "userName": "Taylorswift",
-      "vUrl": "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
-      "userImageUrl": "https://storage.cloud.google.com/assignment_test/img.jpg",
+      "vUrl": "https://assignment_test.storage.googleapis.com/VID2.mp4",
+      "userImageUrl": "https://assignment_test.storage.googleapis.com/img.jpg",
       "time": "10hr"
     },
     {
       "id": "3",
       "userName": "harry_go",
-      "vUrl": "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
-      "userImageUrl": "https://storage.cloud.google.com/assignment_test/img.jpg",
+      "vUrl": "https://assignment_test.storage.googleapis.com/VID3.mp4",
+      "userImageUrl": "https://assignment_test.storage.googleapis.com/img.jpg",
       "time": "8hr"
     }
   ]

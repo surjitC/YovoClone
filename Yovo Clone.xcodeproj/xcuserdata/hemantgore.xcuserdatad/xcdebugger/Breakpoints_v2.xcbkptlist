@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "38EB71B1-AB14-4091-ADA1-492384669C8C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC33E2CA-2B91-4796-ABDD-26C973705C69"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Yovo Clone/ImageDownloader.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "downloadImageFrom(url:indexPath:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F34D082-DAF1-44D6-BAE3-CE8122837DE3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Yovo Clone/ImageDownloader.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "downloadImageFrom(urlString:indexPath:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1F34D082-DAF1-44D6-BAE3-CE8122837DE3 - 844909d372736ad5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Yovo_Clone.ImageDownloader.downloadImageFrom(urlString: Swift.String, indexPath: Foundation.IndexPath, completionHandler: (__C.UIImage, Foundation.IndexPath) -&gt; ()) -&gt; ()"
+                  moduleName = "Yovo Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hemantgore/Desktop/Surjit/YovoClone/Yovo%20Clone/ImageDownloader.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "446">
+               </Location>
+               <Location
+                  uuid = "1F34D082-DAF1-44D6-BAE3-CE8122837DE3 - 5ff9c95a83ee7db6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIImage, Foundation.IndexPath) -&gt; () in Yovo_Clone.ImageDownloader.downloadImageFrom(urlString: Swift.String, indexPath: Foundation.IndexPath, completionHandler: (__C.UIImage, Foundation.IndexPath) -&gt; ()) -&gt; ()"
+                  moduleName = "Yovo Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hemantgore/Desktop/Surjit/YovoClone/Yovo%20Clone/ImageDownloader.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "53">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "85B70B2F-827C-404F-8328-206284BE5D91"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Yovo Clone/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "configureUI()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "85B70B2F-827C-404F-8328-206284BE5D91 - ad88b1909ed273db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIImage, Foundation.IndexPath) -&gt; () in Yovo_Clone.ProfileViewController.configureUI() -&gt; ()"
+                  moduleName = "Yovo Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hemantgore/Desktop/Surjit/YovoClone/Yovo%20Clone/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "85B70B2F-827C-404F-8328-206284BE5D91 - b4bd53245d46421b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (__C.UIImage, Foundation.IndexPath) -&gt; () in Yovo_Clone.ProfileViewController.configureUI() -&gt; ()"
+                  moduleName = "Yovo Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hemantgore/Desktop/Surjit/YovoClone/Yovo%20Clone/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "95">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CE3641F-BBD4-4440-996F-17597C729C57"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Yovo Clone/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "configureUI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD0E608B-FE39-432A-8A67-5F8E3A7EBFE8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Yovo Clone/ImageDownloader.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "downloadImageFrom(urlString:indexPath:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5ACEDD18-448B-4BC9-9BA9-306665B2A822"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Yovo Clone/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "getImagefor(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3911686-5F81-4786-A8B6-DD270961FC15"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Yovo Clone/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "getImagefor(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "850439B6-457B-46CD-9852-ACAFEDBDC419"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Yovo Clone/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "getImagefor(_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "850439B6-457B-46CD-9852-ACAFEDBDC419 - 29ac28db88782e56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Yovo_Clone.ProfileViewController.getImagefor(Swift.String, Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Yovo Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hemantgore/Desktop/Surjit/YovoClone/Yovo%20Clone/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "531">
+               </Location>
+               <Location
+                  uuid = "850439B6-457B-46CD-9852-ACAFEDBDC419 - 76ea0be6e4cc2e1e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIImage, Foundation.IndexPath) -&gt; () in Yovo_Clone.ProfileViewController.getImagefor(Swift.String, Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Yovo Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hemantgore/Desktop/Surjit/YovoClone/Yovo%20Clone/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "203">
+               </Location>
+               <Location
+                  uuid = "850439B6-457B-46CD-9852-ACAFEDBDC419 - 64dbf943fd6e4eb5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (__C.UIImage, Foundation.IndexPath) -&gt; () in Yovo_Clone.ProfileViewController.getImagefor(Swift.String, Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Yovo Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hemantgore/Desktop/Surjit/YovoClone/Yovo%20Clone/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "166">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
