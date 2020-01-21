@@ -10,4 +10,8 @@ import UIKit
 
 class ProfileCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - Cell Identifier
+    static let cellIdentifier = "ProfileCollectionViewCell"
+    
+    // MARK: - IBOutlets
 }

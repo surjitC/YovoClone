@@ -1,5 +1,5 @@
 //
-//  FeedTableViewCell.swift
+//  FeedCollectionViewCell.swift
 //  Yovo Clone
 //
 //  Created by Surjit's iMac on 20/01/20.
@@ -9,16 +9,15 @@
 import UIKit
 import AVFoundation
 
-class FeedTableViewCell: UITableViewCell {
+class FeedCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Cell Identifier
-    static let cellIdentifier = "FeedTableViewCell"
+    static let cellIdentifier = "FeedCollectionViewCell"
     
     // MARK: - IBOutlets
     @IBOutlet var playerView: PlayerView!
-    @IBOutlet var playerViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet var userName: UILabel!
-    @IBOutlet var time: UILabel!
+    @IBOutlet var timeAgo: UILabel!
     @IBOutlet var profileImageButton: UIButton!
     
     // MARK: - Properties
@@ -27,34 +26,42 @@ class FeedTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        playerViewHeightConstraint.constant = UIScreen.main.bounds.height
+        
+        self.configureUI()
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        playerViewHeightConstraint.constant = UIScreen.main.bounds.height
-        
+        self.configureUI()
+    }
+    
+    func configureUI() {
+        self.profileImageButton.layer.borderColor = UIColor.white.cgColor
+        self.profileImageButton.layer.borderWidth = 2.0
+        self.profileImageButton.layer.cornerRadius = 20.0
     }
     
     func configureCell(for post: Post) {
-        self.contentView.layer.borderWidth = 2
-        self.contentView.layer.borderColor = UIColor.black.cgColor
         self.userName.text = post.userName
-        self.time.text = post.time
+        self.timeAgo.text = post.time
         self.post = post
-//        self.setVideo()
     }
     
-    func setVideo() {
+    func playVideo() {
+        self.pauseVideo()
         guard let url = self.post?.vUrl else { return }
-        let videoURL = NSURL(string: url)!
-        let avPlayer = AVPlayer(url: videoURL as URL)
+        let videoURL = URL(string: url)!
+        let avPlayer = AVPlayer(url: videoURL)
         self.playerView.playerLayer.player = avPlayer
-        
+        self.playerView.player?.play()
+    }
+    
+    func pauseVideo() {
+        self.playerView.player?.seek(to: .zero)
+        self.playerView.player?.pause()
     }
     
     func setImage(imageData: Data) {
-        self.userName.text = "Hello"
         self.profileImageButton.setBackgroundImage(UIImage(data: imageData), for: .normal)
     }
 

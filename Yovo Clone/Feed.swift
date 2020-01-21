@@ -15,3 +15,8 @@ class Feed: Codable {
 class Post: Codable {
     var id, userName, vUrl, userImageUrl, time: String?
 }
+
+class User: Codable {
+    var posts: [Post]?
+    var userName, title, userImageUrl, description: String?
+}

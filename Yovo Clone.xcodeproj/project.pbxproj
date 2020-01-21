@@ -18,9 +18,12 @@
 		7C3EC0F823D5A3D700922586 /* feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C3EC0F723D5A3D700922586 /* feed.json */; };
 		7C3EC0FA23D5A3DB00922586 /* userprofile.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C3EC0F923D5A3DB00922586 /* userprofile.json */; };
 		7C3EC0FC23D5A67E00922586 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3EC0FB23D5A67E00922586 /* PlayerView.swift */; };
-		7C3EC0FF23D5A7E300922586 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3EC0FE23D5A7E300922586 /* FeedTableViewCell.swift */; };
+		7C3EC0FF23D5A7E300922586 /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3EC0FE23D5A7E300922586 /* FeedCollectionViewCell.swift */; };
 		7C3EC10123D5AF4E00922586 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3EC10023D5AF4E00922586 /* Feed.swift */; };
 		7C3EC10323D5B06800922586 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3EC10223D5B06800922586 /* FeedViewModel.swift */; };
+		7C3EC10823D70BDF00922586 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3EC10723D70BDF00922586 /* ProfileViewController.swift */; };
+		7C3EC10A23D70C0100922586 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3EC10923D70C0100922586 /* ProfileViewModel.swift */; };
+		7C3EC10C23D70DC000922586 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3EC10B23D70DBF00922586 /* ProfileCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +61,12 @@
 		7C3EC0F723D5A3D700922586 /* feed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = feed.json; sourceTree = "<group>"; };
 		7C3EC0F923D5A3DB00922586 /* userprofile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userprofile.json; sourceTree = "<group>"; };
 		7C3EC0FB23D5A67E00922586 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		7C3EC0FE23D5A7E300922586 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		7C3EC0FE23D5A7E300922586 /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		7C3EC10023D5AF4E00922586 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		7C3EC10223D5B06800922586 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		7C3EC10723D70BDF00922586 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7C3EC10923D70C0100922586 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		7C3EC10B23D70DBF00922586 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,7 @@
 				7C3EC0C623D5A37A00922586 /* AppDelegate.swift */,
 				7C3EC0C823D5A37A00922586 /* SceneDelegate.swift */,
 				7C3EC0CA23D5A37A00922586 /* FeedViewController.swift */,
+				7C3EC10723D70BDF00922586 /* ProfileViewController.swift */,
 				7C3EC0CC23D5A37A00922586 /* Main.storyboard */,
 				7C3EC0CF23D5A37B00922586 /* Assets.xcassets */,
 				7C3EC0D123D5A37B00922586 /* LaunchScreen.storyboard */,
@@ -123,6 +130,7 @@
 				7C3EC0FB23D5A67E00922586 /* PlayerView.swift */,
 				7C3EC10023D5AF4E00922586 /* Feed.swift */,
 				7C3EC10223D5B06800922586 /* FeedViewModel.swift */,
+				7C3EC10923D70C0100922586 /* ProfileViewModel.swift */,
 			);
 			path = "Yovo Clone";
 			sourceTree = "<group>";
@@ -157,7 +165,8 @@
 		7C3EC0FD23D5A7D000922586 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				7C3EC0FE23D5A7E300922586 /* FeedTableViewCell.swift */,
+				7C3EC0FE23D5A7E300922586 /* FeedCollectionViewCell.swift */,
+				7C3EC10B23D70DBF00922586 /* ProfileCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -298,10 +307,13 @@
 				7C3EC10323D5B06800922586 /* FeedViewModel.swift in Sources */,
 				7C3EC0CB23D5A37A00922586 /* FeedViewController.swift in Sources */,
 				7C3EC10123D5AF4E00922586 /* Feed.swift in Sources */,
+				7C3EC10A23D70C0100922586 /* ProfileViewModel.swift in Sources */,
+				7C3EC10C23D70DC000922586 /* ProfileCollectionViewCell.swift in Sources */,
 				7C3EC0C723D5A37A00922586 /* AppDelegate.swift in Sources */,
 				7C3EC0C923D5A37A00922586 /* SceneDelegate.swift in Sources */,
 				7C3EC0FC23D5A67E00922586 /* PlayerView.swift in Sources */,
-				7C3EC0FF23D5A7E300922586 /* FeedTableViewCell.swift in Sources */,
+				7C3EC10823D70BDF00922586 /* ProfileViewController.swift in Sources */,
+				7C3EC0FF23D5A7E300922586 /* FeedCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

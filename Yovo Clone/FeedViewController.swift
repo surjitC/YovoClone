@@ -11,7 +11,7 @@ import UIKit
 class FeedViewController: UIViewController {
     
     //MARK: - IBOutlets
-    @IBOutlet var feedTableView: UITableView!
+    @IBOutlet var feedCollectionView: UICollectionView!
     
     //MARK: - Properties
     var feedViewModel = FeedViewModel()
@@ -21,48 +21,74 @@ class FeedViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.feedViewModel.parseJson()
-        self.feedTableView.reloadData()
+        self.feedCollectionView.reloadData()
     }
     
     
 }
 
-extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return feedViewModel.posts.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let feedCell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.cellIdentifier, for: indexPath) as? FeedTableViewCell else { return UITableViewCell() }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let feedCell = collectionView.dequeueReusableCell(withReuseIdentifier: FeedCollectionViewCell.cellIdentifier, for: indexPath) as? FeedCollectionViewCell else { return UICollectionViewCell() }
         let post = feedViewModel.posts[indexPath.row]
         feedCell.configureCell(for: post)
-        if let imageUrl = post.userImageUrl {
-            self.feedViewModel.downloadImage(from: imageUrl, at: indexPath) { (data, index) in
-                if let data = data {
-                    DispatchQueue.main.async {
-                        guard let cell = tableView.cellForRow(at: index) as? FeedTableViewCell else { return }
-                        cell.setImage(imageData: data)
-                        
-                        self.feedTableView.reloadData()
-                    }
-                }
-            }
+//        if let imageUrl = post.userImageUrl {
+//            self.feedViewModel.downloadImage(from: imageUrl, at: indexPath) { (data, index) in
+//                if let data = data {
+//                    DispatchQueue.main.async {
+//                        guard let cell = collectionView.cellForItem(at: index) as? FeedCollectionViewCell else { return }
+//                        cell.setImage(imageData: data)
+//                        self.feedCollectionView.reloadData()
+//                    }
+//                }
+//            }
+//        }
+        if indexPath.row == 0 {
+            feedCell.playVideo()
         }
         
         return feedCell
-        
     }
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = ProfileViewController.initiateProfileViewController()
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.feedCollectionView.frame.width, height: self.feedCollectionView.frame.height)
+    }
+    
+    func getIndexPath() -> IndexPath {
         var visibleRect = CGRect()
         
-        visibleRect.origin = feedTableView.contentOffset
-        visibleRect.size = feedTableView.bounds.size
+        visibleRect.origin = feedCollectionView.contentOffset
+        visibleRect.size = feedCollectionView.bounds.size
         
         let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
         
-        guard let indexPath = feedTableView.indexPathForRow(at: visiblePoint) else { return }
+        guard let indexPath = feedCollectionView.indexPathForItem(at: visiblePoint) else { return IndexPath() }
         
-        print(indexPath)
+        return indexPath
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let indexPath = getIndexPath()
+        guard let cell = feedCollectionView.cellForItem(at: indexPath) as? FeedCollectionViewCell else { return }
+        cell.pauseVideo()
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+        let indexPath = getIndexPath()
+        guard let cell = feedCollectionView.cellForItem(at: indexPath) as? FeedCollectionViewCell else { return }
+        cell.playVideo()
+       
+    }
+    
 }
 
