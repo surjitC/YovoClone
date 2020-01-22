@@ -91,7 +91,6 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
                 DispatchQueue.main.async {
                     self?.imageCache.setObject(image, forKey: imageUrl as AnyObject)
                     self?.putImage(at: index, image)
-                    self?.feedCollectionView.reloadData()
                 }
 
             }
@@ -99,7 +98,7 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     func putImage(at indexPath: IndexPath, _ image: UIImage) {
         if let updateCell = self.feedCollectionView.cellForItem(at: indexPath) as? FeedCollectionViewCell {
-            updateCell.profileImageButton.setImage(image, for: .normal)
+            updateCell.profileImageButton.setBackgroundImage(image, for: .normal)
         }
     }
     

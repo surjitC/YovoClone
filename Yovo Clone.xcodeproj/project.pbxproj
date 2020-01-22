@@ -119,21 +119,17 @@
 		7C3EC0C523D5A37A00922586 /* Yovo Clone */ = {
 			isa = PBXGroup;
 			children = (
+				7C3EC11123D85EEF00922586 /* Service */,
+				7C3EC11023D85EE100922586 /* Model */,
+				7C3EC10F23D85EC300922586 /* View */,
+				7C3EC10E23D85E9700922586 /* View Models */,
+				7C3EC10D23D85E7000922586 /* View Controller */,
 				7C3EC0FD23D5A7D000922586 /* Cell */,
 				7C3EC0F623D5A39A00922586 /* Mock Json */,
 				7C3EC0C623D5A37A00922586 /* AppDelegate.swift */,
 				7C3EC0C823D5A37A00922586 /* SceneDelegate.swift */,
-				7C3EC0CA23D5A37A00922586 /* FeedViewController.swift */,
-				7C3EC10723D70BDF00922586 /* ProfileViewController.swift */,
-				7C3EC0CC23D5A37A00922586 /* Main.storyboard */,
 				7C3EC0CF23D5A37B00922586 /* Assets.xcassets */,
-				7C3EC0D123D5A37B00922586 /* LaunchScreen.storyboard */,
 				7C3EC0D423D5A37B00922586 /* Info.plist */,
-				7C3EC0FB23D5A67E00922586 /* PlayerView.swift */,
-				7C3EC10023D5AF4E00922586 /* Feed.swift */,
-				7C3EC10223D5B06800922586 /* FeedViewModel.swift */,
-				7C3EC10923D70C0100922586 /* ProfileViewModel.swift */,
-				2138FA3623D754470089DEE7 /* ImageDownloader.swift */,
 			);
 			path = "Yovo Clone";
 			sourceTree = "<group>";
@@ -172,6 +168,50 @@
 				7C3EC10B23D70DBF00922586 /* ProfileCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		7C3EC10D23D85E7000922586 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C3EC0CA23D5A37A00922586 /* FeedViewController.swift */,
+				7C3EC10723D70BDF00922586 /* ProfileViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		7C3EC10E23D85E9700922586 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C3EC10223D5B06800922586 /* FeedViewModel.swift */,
+				7C3EC10923D70C0100922586 /* ProfileViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		7C3EC10F23D85EC300922586 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C3EC0D123D5A37B00922586 /* LaunchScreen.storyboard */,
+				7C3EC0CC23D5A37A00922586 /* Main.storyboard */,
+				7C3EC0FB23D5A67E00922586 /* PlayerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C3EC11023D85EE100922586 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C3EC10023D5AF4E00922586 /* Feed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C3EC11123D85EEF00922586 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2138FA3623D754470089DEE7 /* ImageDownloader.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
